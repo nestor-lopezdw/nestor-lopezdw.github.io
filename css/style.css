@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+nav
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 10px 100px;
+    box-sizing: border-box;
+    transition: .5s;
+}
+
+nav.navbar
+{
+    background-color: rgba(251, 234, 213, 0.51);
+    z-index: 1;
+}
+
+nav.black {
+    background: rgba(0, 0, 0, 0.745);
+    height: 80px;
+    padding: 10px 50px;
+
+}
+
+nav .logo {
+    float: left;
+}
+
+nav .logo img {
+    height: 80px;
+    transition: .5s;
+}
+
+nav.black .logo img {
+    height: 60px;
+}
+
+nav ul {
+    float: right;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+
+}
+
+nav ul li a {
+    line-height: 80px;
+    color: #262626;
+    padding: 5px 20px;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+nav.black ul li a {
+    color: #fff;
+    line-height: 60px;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+    color: #fff;
+    background: #f00;
+}
+
+section.sec1 {
+
+    width: 100%;
+    height: 100vh;
+    background: url('../images/fondo.jpg') #8bc4f6;
+    height: 800px;
+    background-size: cover;
+    z-index: 1;
+}
+
+section.sec2 {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+}
+
+section.sec3 {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../images/fondo2.jpg");
+    background-size: cover;
+}
+
+section.content {
+    padding: 100px;
+}
+
+section.content h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 2em;
+}
+
+section.content p {
+    margin: 20px 0 0;
+    padding: 0;
+    font-size: 1em;
+}
+
+.sec2
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: rgb(9, 74, 136);
+    z-index: -1;
+}
+
+.container
+{
+    position: relative;
+    flex-direction: row;
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 300px;
+    padding: 30px;
+    margin-bottom: 100px;
+   
+}
+
+.container .card
+{
+    position: static;
+    max-width: 300px;
+    height: 215px;
+    background: #fff;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+}
+
+.container .card:hover
+{
+    height: 420px;
+}
+
+.container .card .imgBx
+{
+    position: relative;
+    width: 260px;
+    height: 173px;
+    top: -60px;
+    left: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.container .card .imgBx img
+{
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+.container .card .content
+{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.container .card:hover .content
+{
+    visibility: visible;
+    opacity: 10;
+    margin-top: -60px;
+    transition-delay: 0.2s;
+}
+
+.btn {
+    background-color: DodgerBlue;
+    border: none;
+    color: white;
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  /* Darker background on mouse-over */
+.btn:hover {
+    background-color: RoyalBlue;
+  }
+
+  .portada
+  {
+    width: 100%;
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h1
+  {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 45px;
+    justify-content: center;
+  }
+
+  h2
+  {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+  }
+
+  .h2-card
+  {
+    color: #111;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  h3
+  {
+    margin-top: 10px;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+  }
